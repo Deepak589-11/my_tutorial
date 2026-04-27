@@ -197,15 +197,59 @@ body {
 .card-title {
     font-size: 1.25rem;
     font-weight: 700;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.25rem;
     color: var(--text-primary);
 }
+
+.card-subtitle {
+    font-size: 0.9rem;
+    color: var(--accent-html); /* Default accent, will be overridden by specific cards if needed, or just use a nice neutral */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.card-html .card-subtitle { color: var(--accent-html); }
+.card-css .card-subtitle { color: var(--accent-css); }
+.card-js .card-subtitle { color: var(--accent-js); }
 
 .card-desc {
     color: var(--text-secondary);
     font-size: 0.95rem;
+    margin-bottom: 1rem;
+}
+
+.card-definition {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    border-left: 3px solid var(--color-border);
+    border-radius: 0 8px 8px 0;
     margin-bottom: 1.5rem;
-    flex-grow: 1;
+    font-size: 0.9rem;
+    color: #cbd5e1;
+}
+
+.card-definition ul {
+    list-style-position: inside;
+    margin-left: 0.5rem;
+}
+
+.card-definition li {
+    margin-bottom: 0.5rem;
+}
+
+.card-definition strong {
+    color: var(--text-primary);
+}
+
+.card-example-title {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 
 /* Code Blocks */

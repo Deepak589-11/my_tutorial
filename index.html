@@ -27,14 +27,18 @@
         <section id="html-section" class="cheat-section active">
             <div class="section-header">
                 <h1 class="glow-html">HTML Basics</h1>
-                <p><strong>HyperText Markup Language</strong> is the standard markup language for documents designed to be displayed in a web browser. It defines the structure and content of a web page.</p>
+                <p><strong>HyperText Markup Language</strong> is the standard markup language for documents designed to be displayed in a web browser.</p>
             </div>
             
             <div class="card-grid">
                 <!-- Card 1 -->
                 <div class="card card-html">
                     <div class="card-title">Boilerplate</div>
-                    <div class="card-desc">The essential tags required to create any HTML document.</div>
+                    <div class="card-subtitle">Document Foundation</div>
+                    <div class="card-definition">
+                        The essential tags required to create any HTML document. It defines the document type and contains the head (metadata) and body (visible content).
+                    </div>
+                    <div class="card-example-title">Example Code:</div>
                     <div class="code-block">
 <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
@@ -42,7 +46,7 @@
     &lt;title&gt;Page Title&lt;/title&gt;
 &lt;/head&gt;
 &lt;body&gt;
-    &lt;!-- Content goes here --&gt;
+    &lt;!-- Content here --&gt;
 &lt;/body&gt;
 &lt;/html&gt;</code></pre>
                     </div>
@@ -51,27 +55,37 @@
                 <!-- Card 2 -->
                 <div class="card card-html">
                     <div class="card-title">Headings & Text</div>
-                    <div class="card-desc">Used for titles and paragraphs to format text.</div>
+                    <div class="card-subtitle">Typography Elements</div>
+                    <div class="card-definition">
+                        Used to structure text content logically.
+                        <ul>
+                            <li><strong>&lt;h1&gt; to &lt;h6&gt;:</strong> Headings (h1 is most important).</li>
+                            <li><strong>&lt;p&gt;:</strong> Standard paragraph text.</li>
+                            <li><strong>&lt;strong&gt; / &lt;em&gt;:</strong> Bold and italic emphasis.</li>
+                        </ul>
+                    </div>
+                    <div class="card-example-title">Example Code:</div>
                     <div class="code-block">
 <pre><code>&lt;h1&gt;Main Heading&lt;/h1&gt;
-&lt;h2&gt;Subheading&lt;/h2&gt;
-&lt;!-- h1 through h6 available --&gt;
-
 &lt;p&gt;This is a paragraph.&lt;/p&gt;
-&lt;strong&gt;Bold text&lt;/strong&gt;
-&lt;em&gt;Italic text&lt;/em&gt;</code></pre>
+&lt;strong&gt;Bold text&lt;/strong&gt;</code></pre>
                     </div>
                 </div>
 
                 <!-- Card 3 -->
                 <div class="card card-html">
                     <div class="card-title">Links & Media</div>
-                    <div class="card-desc">Connecting pages and embedding images.</div>
+                    <div class="card-subtitle">Interactive Content</div>
+                    <div class="card-definition">
+                        Elements used to connect pages or embed media.
+                        <ul>
+                            <li><strong>&lt;a&gt;:</strong> Anchor tag for creating hyperlinks.</li>
+                            <li><strong>&lt;img&gt;:</strong> Embeds an image (requires src and alt attributes).</li>
+                        </ul>
+                    </div>
+                    <div class="card-example-title">Example Code:</div>
                     <div class="code-block">
-<pre><code>&lt;!-- Anchor (Link) --&gt;
-&lt;a href="https://example.com"&gt;Visit Site&lt;/a&gt;
-
-&lt;!-- Image --&gt;
+<pre><code>&lt;a href="url.com"&gt;Click Here&lt;/a&gt;
 &lt;img src="image.jpg" alt="Description"&gt;</code></pre>
                     </div>
                 </div>
@@ -79,49 +93,59 @@
                 <!-- Card 4 -->
                 <div class="card card-html">
                     <div class="card-title">Containers</div>
-                    <div class="card-desc">Elements used to group other elements together.</div>
+                    <div class="card-subtitle">Layout Grouping</div>
+                    <div class="card-definition">
+                        Generic elements used to group other elements, usually for styling purposes.
+                        <ul>
+                            <li><strong>&lt;div&gt;:</strong> A block-level container (takes up full width).</li>
+                            <li><strong>&lt;span&gt;:</strong> An inline container (wraps tightly around content).</li>
+                        </ul>
+                    </div>
+                    <div class="card-example-title">Example Code:</div>
                     <div class="code-block">
-<pre><code>&lt;!-- Block-level container --&gt;
-&lt;div class="container"&gt;
-    &lt;p&gt;Grouped content&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;!-- Inline container --&gt;
-&lt;span style="color: red;"&gt;Highlight&lt;/span&gt;</code></pre>
+<pre><code>&lt;div class="box"&gt;
+    &lt;span&gt;Highlighted&lt;/span&gt; text.
+&lt;/div&gt;</code></pre>
                     </div>
                 </div>
 
                 <!-- Card 5 -->
                 <div class="card card-html">
                     <div class="card-title">Lists</div>
-                    <div class="card-desc">Used to group related items.</div>
+                    <div class="card-subtitle">Data Grouping</div>
+                    <div class="card-definition">
+                        Used to group a set of related items.
+                        <ul>
+                            <li><strong>&lt;ul&gt;:</strong> Unordered list (bullet points).</li>
+                            <li><strong>&lt;ol&gt;:</strong> Ordered list (numbered).</li>
+                            <li><strong>&lt;li&gt;:</strong> List item (used inside ul/ol).</li>
+                        </ul>
+                    </div>
+                    <div class="card-example-title">Example Code:</div>
                     <div class="code-block">
-<pre><code>&lt;!-- Unordered List --&gt;
-&lt;ul&gt;
+<pre><code>&lt;ul&gt;
     &lt;li&gt;Item 1&lt;/li&gt;
     &lt;li&gt;Item 2&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;!-- Ordered List --&gt;
-&lt;ol&gt;
-    &lt;li&gt;First&lt;/li&gt;
-    &lt;li&gt;Second&lt;/li&gt;
-&lt;/ol&gt;</code></pre>
+&lt;/ul&gt;</code></pre>
                     </div>
                 </div>
 
                 <!-- Card 6 -->
                 <div class="card card-html">
                     <div class="card-title">Forms & Inputs</div>
-                    <div class="card-desc">Collecting user data.</div>
+                    <div class="card-subtitle">User Interaction</div>
+                    <div class="card-definition">
+                        Used to collect user input.
+                        <ul>
+                            <li><strong>&lt;form&gt;:</strong> The wrapper for input elements.</li>
+                            <li><strong>&lt;input&gt;:</strong> Data field (text, password, checkbox).</li>
+                            <li><strong>&lt;button&gt;:</strong> Triggers form submission.</li>
+                        </ul>
+                    </div>
+                    <div class="card-example-title">Example Code:</div>
                     <div class="code-block">
-<pre><code>&lt;form action="/submit"&gt;
-    &lt;label for="name"&gt;Name:&lt;/label&gt;
-    &lt;input type="text" id="name"&gt;
-    
-    &lt;input type="password"&gt;
-    &lt;input type="checkbox"&gt;
-    
+<pre><code>&lt;form&gt;
+    &lt;input type="text" placeholder="Name"&gt;
     &lt;button type="submit"&gt;Send&lt;/button&gt;
 &lt;/form&gt;</code></pre>
                     </div>
@@ -130,16 +154,21 @@
                 <!-- Card 7 -->
                 <div class="card card-html">
                     <div class="card-title">Tables</div>
-                    <div class="card-desc">Displaying data in rows and columns.</div>
+                    <div class="card-subtitle">Grid Data</div>
+                    <div class="card-definition">
+                        Used for displaying tabular data in rows and columns.
+                        <ul>
+                            <li><strong>&lt;table&gt;:</strong> The main container.</li>
+                            <li><strong>&lt;tr&gt;:</strong> Table row.</li>
+                            <li><strong>&lt;th&gt; / &lt;td&gt;:</strong> Header cell / Standard data cell.</li>
+                        </ul>
+                    </div>
+                    <div class="card-example-title">Example Code:</div>
                     <div class="code-block">
 <pre><code>&lt;table&gt;
     &lt;tr&gt;
-        &lt;th&gt;Header 1&lt;/th&gt;
-        &lt;th&gt;Header 2&lt;/th&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;Data A&lt;/td&gt;
-        &lt;td&gt;Data B&lt;/td&gt;
+        &lt;th&gt;Name&lt;/th&gt;
+        &lt;td&gt;Alice&lt;/td&gt;
     &lt;/tr&gt;
 &lt;/table&gt;</code></pre>
                     </div>
@@ -148,14 +177,20 @@
                 <!-- Card 8 -->
                 <div class="card card-html">
                     <div class="card-title">Semantic Tags</div>
-                    <div class="card-desc">Elements with meaning for better accessibility and SEO.</div>
+                    <div class="card-subtitle">Meaningful Structure</div>
+                    <div class="card-definition">
+                        Tags that describe their meaning to both the browser and the developer (improves SEO & Accessibility).
+                        <ul>
+                            <li><strong>&lt;header&gt; / &lt;footer&gt;:</strong> Top/bottom of a page.</li>
+                            <li><strong>&lt;nav&gt; / &lt;main&gt;:</strong> Navigation / primary content.</li>
+                        </ul>
+                    </div>
+                    <div class="card-example-title">Example Code:</div>
                     <div class="code-block">
-<pre><code>&lt;header&gt;Top area&lt;/header&gt;
-&lt;nav&gt;Navigation links&lt;/nav&gt;
-&lt;main&gt;Main content&lt;/main&gt;
-&lt;article&gt;Independent post&lt;/article&gt;
-&lt;section&gt;Thematic grouping&lt;/section&gt;
-&lt;footer&gt;Bottom area&lt;/footer&gt;</code></pre>
+<pre><code>&lt;header&gt;Logo & Nav&lt;/header&gt;
+&lt;main&gt;
+    &lt;article&gt;Blog Post&lt;/article&gt;
+&lt;/main&gt;</code></pre>
                     </div>
                 </div>
             </div>
@@ -170,40 +205,48 @@
         <section id="css-section" class="cheat-section">
             <div class="section-header">
                 <h1 class="glow-css">CSS Fundamentals</h1>
-                <p><strong>Cascading Style Sheets</strong> is a style sheet language used for describing the presentation of a document written in HTML. It controls the layout, colors, and fonts.</p>
+                <p><strong>Cascading Style Sheets</strong> describes the presentation of a document written in HTML.</p>
             </div>
             
             <div class="card-grid">
                 <!-- Card 1 -->
                 <div class="card card-css">
                     <div class="card-title">Selectors</div>
-                    <div class="card-desc">How to target HTML elements to apply styles.</div>
+                    <div class="card-subtitle">Targeting Elements</div>
+                    <div class="card-definition">
+                        How you select which HTML elements to apply styles to.
+                        <ul>
+                            <li><strong>Tag:</strong> Targets all elements of a type (e.g., <code>p</code>).</li>
+                            <li><strong>Class (.):</strong> Targets elements with a specific class.</li>
+                            <li><strong>ID (#):</strong> Targets a single unique element.</li>
+                        </ul>
+                    </div>
+                    <div class="card-example-title">Example Code:</div>
                     <div class="code-block">
-<pre><code>/* Tag selector */
-p { color: white; }
-
-/* Class selector */
+<pre><code>p { color: white; }
 .my-class { margin: 10px; }
-
-/* ID selector */
-#my-id { font-size: 20px; }
-
-/* All elements */
-* { box-sizing: border-box; }</code></pre>
+#my-id { font-size: 20px; }</code></pre>
                     </div>
                 </div>
 
                 <!-- Card 2 -->
                 <div class="card card-css">
                     <div class="card-title">Box Model</div>
-                    <div class="card-desc">The core concept of layout: content, padding, borders, and margins.</div>
+                    <div class="card-subtitle">Spacing & Layout</div>
+                    <div class="card-definition">
+                        Every element is a rectangular box. The box model defines how spacing is calculated.
+                        <ul>
+                            <li><strong>Padding:</strong> Space inside the border.</li>
+                            <li><strong>Border:</strong> The line around the element.</li>
+                            <li><strong>Margin:</strong> Space outside the border.</li>
+                        </ul>
+                    </div>
+                    <div class="card-example-title">Example Code:</div>
                     <div class="code-block">
 <pre><code>.box {
-    width: 200px;
-    height: 100px;
-    padding: 20px;   /* Inside space */
+    padding: 20px;
     border: 2px solid red;
-    margin: 15px;    /* Outside space */
+    margin: 15px;
 }</code></pre>
                     </div>
                 </div>
@@ -211,30 +254,39 @@ p { color: white; }
                 <!-- Card 3 -->
                 <div class="card card-css">
                     <div class="card-title">Flexbox</div>
-                    <div class="card-desc">A one-dimensional layout method for arranging items in rows or columns.</div>
+                    <div class="card-subtitle">1D Layout System</div>
+                    <div class="card-definition">
+                        A layout model for aligning items in a single row or column.
+                        <ul>
+                            <li><strong>justify-content:</strong> Aligns along the main axis.</li>
+                            <li><strong>align-items:</strong> Aligns along the cross axis.</li>
+                        </ul>
+                    </div>
+                    <div class="card-example-title">Example Code:</div>
                     <div class="code-block">
 <pre><code>.container {
     display: flex;
-    justify-content: center; /* Horiz align */
-    align-items: center;     /* Vert align */
-    flex-direction: row;     /* Default */
-    gap: 1rem;               /* Spacing */
+    justify-content: center;
+    align-items: center;
 }</code></pre>
                     </div>
                 </div>
-                
+
                 <!-- Card 4 -->
                 <div class="card card-css">
                     <div class="card-title">Transitions & Hover</div>
-                    <div class="card-desc">Smooth animations when state changes.</div>
+                    <div class="card-subtitle">Animations</div>
+                    <div class="card-definition">
+                        Used to create smooth changes when an element's state changes.
+                        <ul>
+                            <li><strong>transition:</strong> Defines duration and easing.</li>
+                            <li><strong>:hover</strong> Pseudo-class triggered when mouse is over element.</li>
+                        </ul>
+                    </div>
+                    <div class="card-example-title">Example Code:</div>
                     <div class="code-block">
-<pre><code>.btn {
-    background: blue;
-    transition: all 0.3s ease;
-}
-
+<pre><code>.btn { transition: all 0.3s; }
 .btn:hover {
-    background: darkblue;
     transform: scale(1.05);
 }</code></pre>
                     </div>
@@ -243,17 +295,16 @@ p { color: white; }
                 <!-- Card 5 -->
                 <div class="card card-css">
                     <div class="card-title">CSS Grid</div>
-                    <div class="card-desc">A powerful 2D layout system for rows and columns.</div>
+                    <div class="card-subtitle">2D Layout System</div>
+                    <div class="card-definition">
+                        A powerful layout system for designing complex web pages using rows and columns simultaneously.
+                    </div>
+                    <div class="card-example-title">Example Code:</div>
                     <div class="code-block">
-<pre><code>.grid-container {
+<pre><code>.grid {
     display: grid;
-    /* 3 equal columns */
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
-}
-.item {
-    /* Span 2 columns */
-    grid-column: span 2; 
 }</code></pre>
                     </div>
                 </div>
@@ -261,20 +312,21 @@ p { color: white; }
                 <!-- Card 6 -->
                 <div class="card card-css">
                     <div class="card-title">Positioning</div>
-                    <div class="card-desc">Control where elements appear on screen.</div>
+                    <div class="card-subtitle">Element Flow</div>
+                    <div class="card-definition">
+                        Controls how an element is placed within the document.
+                        <ul>
+                            <li><strong>Relative:</strong> Moved relative to normal position.</li>
+                            <li><strong>Absolute:</strong> Removed from flow, positioned to nearest parent.</li>
+                            <li><strong>Fixed:</strong> Stuck to the viewport.</li>
+                        </ul>
+                    </div>
+                    <div class="card-example-title">Example Code:</div>
                     <div class="code-block">
-<pre><code>.element {
-    /* Flow normally */
-    position: static;
-    
-    /* Relative to normal position */
-    position: relative; top: 10px;
-    
-    /* Relative to nearest positioned ancestor */
-    position: absolute; right: 0;
-    
-    /* Fixed to viewport */
-    position: fixed; bottom: 0;
+<pre><code>.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
 }</code></pre>
                     </div>
                 </div>
@@ -282,16 +334,20 @@ p { color: white; }
                 <!-- Card 7 -->
                 <div class="card card-css">
                     <div class="card-title">Typography</div>
-                    <div class="card-desc">Styling text and fonts.</div>
+                    <div class="card-subtitle">Text Styling</div>
+                    <div class="card-definition">
+                        Properties to control the appearance of text.
+                        <ul>
+                            <li><strong>font-family:</strong> Defines the typeface.</li>
+                            <li><strong>line-height:</strong> Vertical spacing between lines.</li>
+                        </ul>
+                    </div>
+                    <div class="card-example-title">Example Code:</div>
                     <div class="code-block">
 <pre><code>p {
     font-family: 'Arial', sans-serif;
     font-size: 16px;
-    font-weight: bold;
-    line-height: 1.5;
     text-align: center;
-    text-transform: uppercase;
-    text-decoration: underline;
 }</code></pre>
                     </div>
                 </div>
@@ -299,19 +355,16 @@ p { color: white; }
                 <!-- Card 8 -->
                 <div class="card card-css">
                     <div class="card-title">Media Queries</div>
-                    <div class="card-desc">Responsive design for different screen sizes.</div>
+                    <div class="card-subtitle">Responsive Design</div>
+                    <div class="card-definition">
+                        Applies CSS rules only when the screen meets certain size conditions (like mobile vs desktop).
+                    </div>
+                    <div class="card-example-title">Example Code:</div>
                     <div class="code-block">
-<pre><code>/* Styles for mobile (default) */
-.col { width: 100%; }
-
-/* Tablet and larger */
-@media (min-width: 768px) {
-    .col { width: 50%; }
-}
-
-/* Desktop and larger */
-@media (min-width: 1024px) {
-    .col { width: 25%; }
+<pre><code>@media (min-width: 768px) {
+    .container {
+        width: 50%;
+    }
 }</code></pre>
                     </div>
                 </div>
@@ -327,155 +380,148 @@ p { color: white; }
         <section id="js-section" class="cheat-section">
             <div class="section-header">
                 <h1 class="glow-js">JavaScript Essentials</h1>
-                <p><strong>JavaScript</strong> is a programming language that allows you to implement complex features on web pages, such as interactive content, dynamic updates, and animations.</p>
+                <p><strong>JavaScript</strong> implements complex features, interactive content, and dynamic updates.</p>
             </div>
             
             <div class="card-grid">
                 <!-- Card 1 -->
                 <div class="card card-js">
-                    <div class="card-title">Variables & Data Types</div>
-                    <div class="card-desc">Storing information in memory.</div>
+                    <div class="card-title">Variables</div>
+                    <div class="card-subtitle">Data Storage</div>
+                    <div class="card-definition">
+                        Containers for storing data values.
+                        <ul>
+                            <li><strong>let:</strong> Variable that can be reassigned later.</li>
+                            <li><strong>const:</strong> Constant variable that cannot be changed.</li>
+                        </ul>
+                    </div>
+                    <div class="card-example-title">Example Code:</div>
                     <div class="code-block">
-<pre><code>// let can be reassigned
-let count = 10; 
+<pre><code>let score = 10;
+score = 15; // Valid
 
-// const cannot be reassigned
-const name = "John"; 
-
-// Data Types
-let isTrue = true;     // Boolean
-let arr = [1, 2, 3];   // Array
-let obj = { age: 25 }; // Object</code></pre>
+const name = "John";
+// name = "Doe"; -> Error</code></pre>
                     </div>
                 </div>
 
                 <!-- Card 2 -->
                 <div class="card card-js">
                     <div class="card-title">Functions</div>
-                    <div class="card-desc">Reusable blocks of code.</div>
+                    <div class="card-subtitle">Reusable Logic</div>
+                    <div class="card-definition">
+                        Blocks of code designed to perform a particular task. They run when "called" or "invoked". Modern JS often uses "Arrow" syntax.
+                    </div>
+                    <div class="card-example-title">Example Code:</div>
                     <div class="code-block">
-<pre><code>// Traditional Function
-function greet(name) {
-    return "Hello " + name;
-}
-
-// Arrow Function (Modern)
+<pre><code>// Arrow Function
 const add = (a, b) => {
     return a + b;
 };
-// Implicit return: const add = (a,b) => a+b;</code></pre>
+console.log(add(5, 2)); // 7</code></pre>
                     </div>
                 </div>
 
                 <!-- Card 3 -->
                 <div class="card card-js">
                     <div class="card-title">DOM Manipulation</div>
-                    <div class="card-desc">Interacting with HTML elements via JS.</div>
+                    <div class="card-subtitle">Changing HTML</div>
+                    <div class="card-definition">
+                        Using JS to select and modify HTML elements on the page (Document Object Model).
+                    </div>
+                    <div class="card-example-title">Example Code:</div>
                     <div class="code-block">
-<pre><code>// Select an element
-const btn = document.querySelector('.my-btn');
+<pre><code>// Select element
+const btn = document.querySelector('.btn');
 
-// Change content
-btn.textContent = "Clicked!";
-
-// Change style
-btn.style.backgroundColor = "red";
-
-// Add a class
-btn.classList.add('active');</code></pre>
+// Change text
+btn.textContent = "Clicked!";</code></pre>
                     </div>
                 </div>
 
                 <!-- Card 4 -->
                 <div class="card card-js">
                     <div class="card-title">Events</div>
-                    <div class="card-desc">Responding to user interactions.</div>
+                    <div class="card-subtitle">User Actions</div>
+                    <div class="card-definition">
+                        Reacting to things the user does, such as clicking, scrolling, or pressing keys.
+                    </div>
+                    <div class="card-example-title">Example Code:</div>
                     <div class="code-block">
-<pre><code>const button = document.getElementById('btn');
+<pre><code>const btn = document.getElementById('btn');
 
-// Add click listener
-button.addEventListener('click', () => {
-    alert('Button was clicked!');
-});
-
-// Other events: 'mouseover', 'keydown', etc.</code></pre>
+btn.addEventListener('click', () => {
+    alert('Hello!');
+});</code></pre>
                     </div>
                 </div>
 
                 <!-- Card 5 -->
                 <div class="card card-js">
                     <div class="card-title">Arrays & Methods</div>
-                    <div class="card-desc">Working with lists of data.</div>
+                    <div class="card-subtitle">List Operations</div>
+                    <div class="card-definition">
+                        Special variables that hold more than one value.
+                        <ul>
+                            <li><strong>map():</strong> Transforms every item.</li>
+                            <li><strong>filter():</strong> Keeps items matching a condition.</li>
+                        </ul>
+                    </div>
+                    <div class="card-example-title">Example Code:</div>
                     <div class="code-block">
-<pre><code>const fruits = ['Apple', 'Banana'];
-fruits.push('Cherry'); // Add to end
-
-// map: creates a new array
-const sizes = fruits.map(f => f.length);
-
-// filter: keeps items that match
-const long = fruits.filter(f => f.length > 5);
-
-// forEach: loops over items
-fruits.forEach(f => console.log(f));</code></pre>
+<pre><code>const nums = [1, 2, 3];
+const doubled = nums.map(n => n * 2);
+// doubled is [2, 4, 6]</code></pre>
                     </div>
                 </div>
 
                 <!-- Card 6 -->
                 <div class="card card-js">
-                    <div class="card-title">Objects & JSON</div>
-                    <div class="card-desc">Storing key-value pairs and data transfer.</div>
+                    <div class="card-title">Objects</div>
+                    <div class="card-subtitle">Key-Value Data</div>
+                    <div class="card-definition">
+                        Data structures containing properties (key-value pairs) and methods (functions).
+                    </div>
+                    <div class="card-example-title">Example Code:</div>
                     <div class="code-block">
 <pre><code>const user = {
     name: "Alice",
     age: 28,
-    greet() { console.log("Hi"); }
 };
-
-console.log(user.name); // Alice
-
-// JSON (JavaScript Object Notation)
-const str = JSON.stringify(user);
-const obj = JSON.parse(str);</code></pre>
+console.log(user.name); // Alice</code></pre>
                     </div>
                 </div>
 
                 <!-- Card 7 -->
                 <div class="card card-js">
                     <div class="card-title">Promises & Async</div>
-                    <div class="card-desc">Handling asynchronous operations (like API calls).</div>
+                    <div class="card-subtitle">Asynchronous Operations</div>
+                    <div class="card-definition">
+                        Used for tasks that take time (like fetching data from a server) without freezing the website. <code>async/await</code> is the modern syntax.
+                    </div>
+                    <div class="card-example-title">Example Code:</div>
                     <div class="code-block">
-<pre><code>// Using Promises
-fetch('api/data')
-  .then(res => res.json())
-  .then(data => console.log(data))
-  .catch(err => console.error(err));
-
-// Using Async/Await
-async function getData() {
-    try {
-        const res = await fetch('api/data');
-        const data = await res.json();
-    } catch(err) { console.error(err); }
+<pre><code>async function getData() {
+    const res = await fetch('/api');
+    const data = await res.json();
+    console.log(data);
 }</code></pre>
                     </div>
                 </div>
 
                 <!-- Card 8 -->
                 <div class="card card-js">
-                    <div class="card-title">Conditionals & Loops</div>
-                    <div class="card-desc">Control flow in logic.</div>
+                    <div class="card-title">Conditionals</div>
+                    <div class="card-subtitle">Logic Flow</div>
+                    <div class="card-definition">
+                        Executing different code based on whether a condition is true or false.
+                    </div>
+                    <div class="card-example-title">Example Code:</div>
                     <div class="code-block">
-<pre><code>// If-Else
-if (score > 90) { grade = 'A'; } 
-else { grade = 'B'; }
-
-// Ternary Operator
-let msg = isTrue ? "Yes" : "No";
-
-// For Loop
-for (let i = 0; i < 5; i++) {
-    console.log(i);
+<pre><code>if (score > 90) { 
+    grade = 'A'; 
+} else { 
+    grade = 'B'; 
 }</code></pre>
                     </div>
                 </div>
