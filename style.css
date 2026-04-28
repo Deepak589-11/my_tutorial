@@ -17,6 +17,9 @@
     
     --accent-js: #f7df1e;
     --accent-js-glow: rgba(247, 223, 30, 0.4);
+    
+    --accent-bs: #7952b3;
+    --accent-bs-glow: rgba(121, 82, 179, 0.4);
 
     /* Fonts */
     --font-main: 'Outfit', sans-serif;
@@ -38,7 +41,8 @@ body {
     background-image: 
         radial-gradient(circle at 15% 50%, rgba(227, 79, 38, 0.05), transparent 25%),
         radial-gradient(circle at 85% 30%, rgba(38, 77, 228, 0.05), transparent 25%),
-        radial-gradient(circle at 50% 80%, rgba(247, 223, 30, 0.05), transparent 25%);
+        radial-gradient(circle at 50% 80%, rgba(247, 223, 30, 0.05), transparent 25%),
+        radial-gradient(circle at 20% 80%, rgba(121, 82, 179, 0.05), transparent 25%);
     background-attachment: fixed;
 }
 
@@ -69,7 +73,7 @@ body {
 }
 
 .accent-text {
-    background: linear-gradient(90deg, var(--accent-html), var(--accent-css), var(--accent-js));
+    background: linear-gradient(90deg, var(--accent-html), var(--accent-css), var(--accent-js), var(--accent-bs));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -121,6 +125,7 @@ body {
 .nav-btn[data-target="html-section"].active::after { background-color: var(--accent-html); }
 .nav-btn[data-target="css-section"].active::after { background-color: var(--accent-css); }
 .nav-btn[data-target="js-section"].active::after { background-color: var(--accent-js); }
+.nav-btn[data-target="bs-section"].active::after { background-color: var(--accent-bs); }
 
 /* Main Container */
 .container {
@@ -158,6 +163,7 @@ body {
 .glow-html { text-shadow: 0 0 20px var(--accent-html-glow); }
 .glow-css { text-shadow: 0 0 20px var(--accent-css-glow); }
 .glow-js { text-shadow: 0 0 20px var(--accent-js-glow); }
+.glow-bs { text-shadow: 0 0 20px var(--accent-bs-glow); }
 
 .section-header p {
     color: var(--text-secondary);
@@ -193,6 +199,7 @@ body {
 .card-html:hover { border-color: var(--accent-html); box-shadow: 0 10px 30px var(--accent-html-glow); }
 .card-css:hover { border-color: var(--accent-css); box-shadow: 0 10px 30px var(--accent-css-glow); }
 .card-js:hover { border-color: var(--accent-js); box-shadow: 0 10px 30px var(--accent-js-glow); }
+.card-bs:hover { border-color: var(--accent-bs); box-shadow: 0 10px 30px var(--accent-bs-glow); }
 
 .card-title {
     font-size: 1.25rem;
@@ -213,6 +220,7 @@ body {
 .card-html .card-subtitle { color: var(--accent-html); }
 .card-css .card-subtitle { color: var(--accent-css); }
 .card-js .card-subtitle { color: var(--accent-js); }
+.card-bs .card-subtitle { color: var(--accent-bs); }
 
 .card-desc {
     color: var(--text-secondary);
